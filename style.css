@@ -1,0 +1,40 @@
+body {
+    background: url('/static/indian_flag.jpg') no-repeat center center fixed;
+    background-size: cover;
+    font-family: Arial, sans-serif;
+    color: #fff;
+    text-align: center;
+    margin-top: 10%;
+}
+
+.container {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 30px;
+    border-radius: 15px;
+    display: inline-block;
+}
+
+input, button, a {
+    padding: 10px 15px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+input {
+    width: 250px;
+}
+
+button {
+    background-color: green;
+    color: white;
+    cursor: pointer;
+}
+
+a {
+    display: block;
+    margin-top: 20px;
+    color: #ffd700;
+    text-decoration: none;
+}
