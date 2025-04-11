@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Face Recognition Voting System</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>🇮🇳 Welcome to the Voting System</h1>
+        <form action="/capture" method="post">
+            <input type="text" name="name" placeholder="Enter your name" required>
+            <button type="submit">Start Face Scan</button>
+        </form>
+    </div>
+</body>
+</html>
