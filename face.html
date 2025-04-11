@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Voting Status</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>{{ status }}</h1>
+
+        {% if allow_vote %}
+            <p>✅ You are eligible to vote. Proceed to the voting booth.</p>
+            <img src="{{ url_for('static', filename='faces_images/' + filename) }}" alt="Verified Face" width="200">
+        {% else %}
+            <p>🚫 You are not allowed to vote.</p>
+        {% endif %}
+
+        <a href="/">🔁 Go Back</a>
+    </div>
+</body>
+</html>
